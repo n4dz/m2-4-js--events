@@ -23,5 +23,3 @@ document.addEventListener("click", registerClick);
 
 //body = 0px, add style to height
 document.querySelector("body").style.height = "100vh";
-
-//Add text
