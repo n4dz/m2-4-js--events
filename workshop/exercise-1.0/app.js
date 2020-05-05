@@ -11,3 +11,17 @@
 // OPTIONAL
 // Feel free to add some CSS to this once you're done
 // --------------------------------------------------
+
+//Register click anywhere on the screen
+function registerClick() {
+  const mainBloc = document.getElementById("main");
+  const textToPage = document.createElement("p");
+  textToPage.innerText = "Hello World!";
+  mainBloc.appendChild(textToPage);
+}
+document.addEventListener("click", registerClick);
+
+//body = 0px, add style to height
+document.querySelector("body").style.height = "100vh";
+
+//Add text
