@@ -21,3 +21,18 @@
 // Stretch goal
 // Make the countdown live (show a countdown that updates several times a
 // second)
+
+//Créer une variable qui génère chiffre entre 3 et 5 = random
+//Mettre un timer
+//Click entre 3 et 5 secondes = gagne sinon perd
+let randomSeconds = Math.floor(Math.random() * 3 + 2);
+let isWinner = false;
+
+setTimeout(function () {
+  const myBody = document.querySelector("body");
+  myBody.addEventListener("click", function () {
+    isWinner = true;
+    console.log(isWinner);
+  });
+}, randomSeconds * 1000);
+document.querySelector("body").style.height = "100vh";
