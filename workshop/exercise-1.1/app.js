@@ -13,3 +13,18 @@
 // OPTIONAL
 // Feel free to add some CSS to this once you're done
 // --------------------------------------------------
+// Au début = looser
+// Créer une intervale d'une seconde.
+//       Évènement qui regarde les click dans le body
+//       Click à l'intérieur de 1sec = winner
+
+let isWinner = false;
+
+setTimeout(function () {
+  const myBody = document.querySelector("body");
+  myBody.addEventListener("click", function () {
+    isWinner = true;
+    console.log(isWinner);
+  });
+}, 3000);
+document.querySelector("body").style.height = "100vh";
